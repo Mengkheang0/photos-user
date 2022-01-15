@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon{
+    cursor: pointer;
+}
+.detail{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+#count{
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+.icon:hover #count{
+    display: block;
+}
+.left{
+    display: flex;
+    width: 50%;
+    gap: 25px;
+
+}
+.comments{
+    cursor: pointer;
+}
+.comments:hover p{
+    text-decoration: underline;
+}
+.comments-input{
+    display: flex;
+    justify-content: center;
+}
+
+.person{
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(14, 14, 29, .5);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    gap: 5px;
+}
+.person .profile img{
+    max-width: 40%;
+    border-radius: 50%;
+}
+.person .profile{
+    width: 20%;
+}
+
+/* hide comments section */
+.commentsSection{
+    display: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 0;
+}
+
+
+.hide{
+    display: block;
+}
